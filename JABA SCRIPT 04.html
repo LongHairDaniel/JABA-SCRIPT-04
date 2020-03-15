@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+		//https: is important distinction of import jQuery.
+	</script>
+	<link rel="stylesheet" type="text/css" href="JABA SCRIPT 04 CSS.CSS">
+	<meta charset="utf-8">
+	<title> Java Script Library, JQuery</title>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#HD").click(function(){
+				$("div").hide()
+			});
+			$("#AP").click(function(){
+				$("div").show();
+			});
+			$("#MoveL").click(function(){
+				$("div").animate({left:'80%'})
+			});
+			$("#MoveR").click(function(){
+				$("div").animate({left:'20%'})
+			});
+			$("#MoveC").click(function(){
+				$("div").animate({left:'50%'})
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div>
+		Please hide me.
+	</div>
+
+	<button id="HD">Hide</button>
+	<button id="AP">Appear</button>
+	<button id="MoveL">Left</button>
+	<button id="MoveR">Right</button>
+	<button id="MoveC">Center</button>
+
+</body>
+</html>
